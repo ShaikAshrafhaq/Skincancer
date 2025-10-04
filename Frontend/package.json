@@ -1,0 +1,13 @@
+{
+  "name": "frontend-root",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "npm run dev --prefix ./@",
+    "build": "npm run build --prefix ./@",
+    "preview": "npm run preview --prefix ./@"
+  },
+  "devDependencies": {
+    "vite": "^7.1.8"
+  }
+}
