@@ -1,22 +1,25 @@
 # Django Settings
 SECRET_KEY=your-secret-key-here
 DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
 
-# Database (for production, use PostgreSQL)
-DATABASE_URL=sqlite:///db.sqlite3
+# Database Settings (Local Development)
+DB_NAME=skincancer_db
+DB_USER=root
+DB_PASSWORD=Ashraf@12
+DB_HOST=localhost
+DB_PORT=3306
 
-# Email Settings (for OTP)
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_HOST_USER=your-email@gmail.com
-EMAIL_HOST_PASSWORD=your-app-password
-EMAIL_USE_TLS=True
+# Database URL (Production - Render.com will provide this)
+# DATABASE_URL=postgresql://user:password@host:port/database
 
-# Redis (for Celery)
-REDIS_URL=redis://localhost:6379
+# CORS Settings
+CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost:5173,http://127.0.0.1:5173
 
-# Security
-ALLOWED_HOSTS=localhost,127.0.0.1
+# Static Files
+STATIC_URL=/static/
+STATIC_ROOT=/opt/render/project/src/staticfiles/
 
-# File Upload
-MAX_UPLOAD_SIZE=10485760  # 10MB in bytes
+# Media Files
+MEDIA_URL=/media/
+MEDIA_ROOT=/opt/render/project/src/media/

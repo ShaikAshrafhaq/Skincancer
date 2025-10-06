@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "npm run dev --prefix ./@",
-    "build": "npm run build --prefix ./@",
-    "preview": "npm run preview --prefix ./@"
+    "dev": "npm run dev --prefix ./frontend",
+    "build": "cd @ && npm install && npm run build",
+    "preview": "npm run preview --prefix ./frontend"
   },
   "devDependencies": {
-    "vite": "^7.1.8"
+    "vite": "^6.0.1"
   }
 }

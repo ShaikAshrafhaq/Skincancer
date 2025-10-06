@@ -1,0 +1,12 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2971
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3022
+D:\SKIN CANCER\Backend\skincancer_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 898
+"GET / HTTP/1.1" 200 898
+"GET / HTTP/1.1" 200 898
